@@ -1,8 +1,8 @@
 # Real-Time Human-Posture-Detection
 
 DTW (Dynamic Time Wrapping) Algorithm is used for matching the accelerometer data to 
-recognize the posture. The code live_acc.py plots live acceleration data and performs DTW 
-algorithm for data.csv (real-time data) with the recorded data: ```sitting.csv```, ```standing.csv``` and 
+recognize the posture. The code ```live_acc.py``` plots live acceleration data and performs DTW 
+algorithm for ```data.csv``` (real-time data) with the recorded data: ```sitting.csv```, ```standing.csv``` and 
 ```sleeping.csv``` for all x, y, z directions. If the posture has minimum cost value for all 3 
 directions, it is the recognized posture and is displayed on the title of the plot. Otherwise, 
 nothing is displayed (indicating a random posture/not one of the three given postures).
