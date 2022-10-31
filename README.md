@@ -7,7 +7,9 @@ algorithm for ```data.csv``` (real-time data) with the recorded data: ```sitting
 directions, it is the recognized posture and is displayed on the title of the plot. Otherwise, 
 nothing is displayed (indicating a random posture/not one of the three given postures).
 
-List of files enclosed with description:
+Used the PhonePI+ app (https://play.google.com/store/apps/details?id=com.phonepiplus&hl=en_US&gl=US) for streaming sensor data to the computer. Reference for the same: https://github.com/priyankark/PhonePi_SampleServer
+
+List of files with description:
 * ```requirements.txt``` – Contains all the dependencies required
 * ```PhonePi.py``` – Records as well as prints real-time accelerometer data using Flask and Socket
 * ```data.csv``` – Data is recorded in this file in real-time
@@ -16,7 +18,7 @@ List of files enclosed with description:
 * ```sleeping.csv``` – Contains recorded data for sleeping (plot for the same is shown in the report)
 * ```live_acc.py``` – It performs DTW algorithm for data.csv with sitting.csv, standing.csv and sleeping.csv for all x, y, z directions and computes the minimum cost among these. Also plots the accelerometer data in real-time
 
-How to run:
+# How to run:
 * Install all the dependencies: ```pip install -r requirements.txt```
 * Clear the data.csv so that fresh data is recorded in the file
 * Run: ```python3 PhonePi.py``` in one terminal
