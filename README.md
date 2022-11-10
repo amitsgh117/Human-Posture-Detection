@@ -5,7 +5,7 @@ recognize the posture. The code ```live_acc.py``` plots live acceleration data a
 algorithm for ```data.csv``` (real-time data) with the recorded data: ```sitting.csv```, ```standing.csv``` and 
 ```sleeping.csv``` for all x, y, z directions. If the posture has minimum cost value for all 3 
 directions, it is the recognized posture and is displayed on the title of the plot. Otherwise, 
-nothing is displayed (indicating a random posture/not one of the three given postures).
+nothing is displayed (indicating a random posture/none of the three given postures).
 
 Used the PhonePI+ app (https://play.google.com/store/apps/details?id=com.phonepiplus&hl=en_US&gl=US) for streaming sensor data to the computer. Reference for the same: https://github.com/priyankark/PhonePi_SampleServer
 
